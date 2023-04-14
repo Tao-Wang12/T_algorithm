@@ -4,7 +4,7 @@ public class TimeComplexity {
     // o(n)
     public static void function1(long n) {
         System.out.println("o(n)算法");
-         long k = 0;
+        long k = 0;
         for (long i = 0; i < n; i++) {
             k++;
         }

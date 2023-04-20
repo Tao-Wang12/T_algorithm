@@ -1,21 +1,27 @@
 package ListNode;
 
+import java.util.List;
 import java.util.ListIterator;
 
 /*
 * 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回新的头节点。
 * 方法：1、原链表上操作  2、设置一个虚拟头节点
 */
-public class RemoveElements {
-    public static class ListNode{
-        int val;
-        ListNode next;
-        public ListNode(int val, ListNode next){
-            this.val = val;
-            this.next = next;
-        }
+class ListNode{
+    int val;
+    ListNode next;
+    ListNode(){
     }
+    ListNode(int val){
+        this.val = val;
+    }
+    public ListNode(int val, ListNode next){
+        this.val = val;
+        this.next = next;
+    }
+}
 
+public class RemoveElements {
     // 方法1：在原链表上操作
     // 时间复杂度：O(n)
     // 空间复杂度：O(1)
@@ -51,20 +57,19 @@ public class RemoveElements {
         // 其他情况
         ListNode dummyNode = new ListNode(-1, head);
         ListNode pre = dummyNode;
-        dummyNode.next = head;
-        while (head != null){
-            if (head.val == val){
-                dummyNode.next = head.next;
+        ListNode cur = head;
+        while (cur != null){
+            if (cur.val == val){
+                pre.next = cur.next;
             }else {
-                pre = head;
+                pre = cur;
             }
-            head = head.next;
+            cur = cur.next;
         }
         return dummyNode.next;
     }
 
     public static void main(String[] args) {
         ListNode list = new ListNode(5, null);
-
     }
 }

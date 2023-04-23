@@ -68,8 +68,4 @@ public class RemoveElements {
         }
         return dummyNode.next;
     }
-
-    public static void main(String[] args) {
-        ListNode list = new ListNode(5, null);
-    }
 }

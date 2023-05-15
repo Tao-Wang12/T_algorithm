@@ -26,7 +26,7 @@ public class ReplaceSpace {
         if (str.length() == 0){
             return s;
         }
-        // 存在空格情况，定义两个指针
+        // 存在空格情况，定义两个指针分别指向两个新字符串的末尾
         int left = s.length()-1;
         s = s + str.toString();
         int right = s.length()-1;

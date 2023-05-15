@@ -27,6 +27,11 @@ public class ThreeNumSum {
             if (nums[i] > 0)
                 return result;
             // 去重nums[i]
+            /**
+             * 这种会忽略掉 -1，-1，2 的情况
+             * if (nums[i] == nums[i+1])
+             *     continue;
+             */
             if (i > 0 && nums[i] == nums[i-1])
                 continue;
             int left = i+1;

@@ -1,12 +1,12 @@
 package String;
 
-/*
-* 题目：给你两个字符串 haystack 和 needle ，请你在 haystack 字符串中找出 needle 字符串的第一个匹配项的下标（下标从 0 开始）。
-*      如果 needle 不是 haystack 的一部分，则返回 -1 。
-*
-* 时间复杂度：O(m+n)
-* 空间复杂度：O(1)
-*/
+/**
+ * 题目：给你两个字符串 haystack 和 needle ，请你在 haystack 字符串中找出 needle 字符串的第一个匹配项的下标（下标从 0 开始）。
+ *      如果 needle 不是 haystack 的一部分，则返回 -1 。
+ * <p>
+ * 时间复杂度：O(m+n)
+ * 空间复杂度：O(1)
+ */
 public class StrStr {
     public int strStr1(String haystack, String needle){
         if (needle.length() == 0)
@@ -47,7 +47,7 @@ public class StrStr {
     }
 
     // 使用内置函数indexOf
-    /*
+    /**
      * 1、 public int indexOf(int ch): 返回指定字符在字符串中第一次出现处的索引，如果此字符串中没有这样的字符，则返回 -1。
        2、 public int indexOf(int ch, int fromIndex): 返回从 fromIndex 位置开始查找指定字符在字符串中第一次出现处的索引，如果此字符串中没有这样的字符，则返回 -1。
        3、 int indexOf(String str): 返回指定字符在字符串中第一次出现处的索引，如果此字符串中没有这样的字符，则返回 -1。

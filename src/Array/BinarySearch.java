@@ -1,11 +1,11 @@
 package Array;
 
-/*
-* 题目：给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
-* 解决方法：二分查找法 （两种区间法--1、[left, right]  2、[left, right) ）
-* 时间复杂度：O(log n)
-* 空间复杂度：O(1)
-* */
+/**
+ * 题目：给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
+ * 解决方法：二分查找法 （两种区间法--1、[left, right]  2、[left, right) ）
+ * 时间复杂度：O(log n)
+ * 空间复杂度：O(1)
+ */
 public class BinarySearch {
     // 左闭右闭区间实现
     public static int function1(int[] arr, int target){

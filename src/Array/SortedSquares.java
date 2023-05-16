@@ -1,8 +1,9 @@
 package Array;
 import java.util.Arrays;
-/*
-* 题目：给你一个按非递减顺序排序的整数数组 nums，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。
-*/
+
+/**
+ * 题目：给你一个按非递减顺序排序的整数数组 nums，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。
+ */
 public class SortedSquares {
     // 暴力解法：先求平方，再使用快速排序
     // 时间复杂度：O(n + nlog n)

@@ -1,12 +1,9 @@
 package ListNode;
 
-import java.util.List;
-import java.util.ListIterator;
-
-/*
-* 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回新的头节点。
-* 方法：1、原链表上操作  2、设置一个虚拟头节点
-*/
+/**
+ * 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回新的头节点。
+ * 方法：1、原链表上操作  2、设置一个虚拟头节点
+ */
 class ListNode{
     int val;
     ListNode next;

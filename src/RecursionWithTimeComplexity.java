@@ -1,8 +1,8 @@
 import java.util.Scanner;
-/*
-* 使用递归求x的n次方，并分析复杂度
-* 递归算法的空间复杂度 = 每次递归的空间复杂度 * 递归的深度
-* */
+/**
+ * 使用递归求x的n次方，并分析复杂度
+ * 递归算法的空间复杂度 = 每次递归的空间复杂度 * 递归的深度
+ */
 
 public class RecursionWithTimeComplexity{
     // 复杂度为O(n)的循环

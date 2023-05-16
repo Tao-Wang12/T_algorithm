@@ -1,16 +1,16 @@
 package Array;
 
-/*
-* 问题：给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。
-*      不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并原地修改输入数组。
-*      元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
-* */
+/**
+ * 问题：给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。
+ *     不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并原地修改输入数组。
+ *     元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
+ */
 public class RemoveElements {
-    /*
-    * 方法一：暴力解法 - 使用双循环 （注意点：数组边界问题）
-    * 时间复杂度：0(n^2)
-    * 空间复杂度：O(1)
-    */
+    /**
+     *  方法一：暴力解法 - 使用双循环 （注意点：数组边界问题）
+     *  时间复杂度：0(n^2)
+     *  空间复杂度：O(1)
+     */
     public static int function1(int[] arr, int val){
         int size = arr.length;
         for (int i = 0; i < size; i++){
@@ -25,13 +25,13 @@ public class RemoveElements {
         return size;
     }
 
-    /*
-    * 方法二：快慢指针法
-    *        - 快指针：寻找新数组的元素，新数组就是不含有目标元素的数组
-    *        - 慢指针：指向更新后新数组下标的位置
-    * 时间复杂度：0(n)
-    * 空间复杂度：O(1)
-    */
+    /**
+     * 方法二：快慢指针法
+     *      - 快指针：寻找新数组的元素，新数组就是不含有目标元素的数组
+     *      - 慢指针：指向更新后新数组下标的位置
+     * 时间复杂度：0(n)
+     * 空间复杂度：O(1)
+     */
     public static int function2(int[] nums, int val){
         int slowIndex = 0;
         for (int fastIndex = 0; fastIndex < nums.length; fastIndex++){
@@ -43,11 +43,11 @@ public class RemoveElements {
         return slowIndex;
     }
 
-    /*
-    * 方法三：相向双指针法 - 基于元素顺序可以改变的题目，改变了元素相对位置，确保了移动最少元素
-    * 时间复杂度：O(n)
-    * 空间复杂度：O(1)
-    */
+    /**
+     * 方法三：相向双指针法 - 基于元素顺序可以改变的题目，改变了元素相对位置，确保了移动最少元素
+     * 时间复杂度：O(n)
+     * 空间复杂度：O(1)
+     */
     public static int function3(int[] nums, int val){
         int leftIndex = 0;
         int rightIndex = nums.length - 1;

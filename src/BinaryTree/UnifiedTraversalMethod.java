@@ -6,7 +6,7 @@ import java.util.Stack;
 
 /**
  * 前、中、后序遍历的统一迭代方法
- * 思路：将访问的节点放入栈中，同时将要处理的节点也放入栈中但要紧接着放入一个空指针NULL
+ * 思路：将访问的节点放入栈中，同时将要处理的节点也放入栈中但要紧接着放入一个空指针 null
  */
 public class UnifiedTraversalMethod {
     // 前序遍历
